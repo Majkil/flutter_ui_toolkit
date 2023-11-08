@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:universal_ui/UIActionSheet/action_sheet_factory.dart';
+import 'package:universal_ui/widgets/UIActionSheet/action_sheet_factory.dart';
 import 'package:universal_ui/widgets/UIButton/UIButton.dart';
 import 'package:universal_ui/widgets/UIDialog/dialog_factory.dart';
 import 'package:universal_ui/widgets/UITextField/UITextField.dart';
