@@ -1,57 +1,51 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:universal_ui/models/UIAction.dart';
-import 'package:universal_ui/widgets/UIActionSheet/android_action_sheet.dart';
-import 'package:universal_ui/widgets/UIActionSheet/iaction_sheet.dart';
-
+import './android_dialog.dart';
   
-
-import 'package:flutter/cupertino.dart';
-import 'package:universal_ui/widgets/UIActionSheet/ios_action_sheet.dart';
-
+import './idialog.dart';
+import './ios_dialog.dart';
 
 ///
 /// Renders a dialog based on the [Platform] OS
 ///
-class UIActionSheet {
+class UIDialog {
   static Future<T?> show<T>(
     BuildContext context, {
     Widget? title,
     Widget? content,
     List<UIAction>? actions,
-    UIAction? cancel,
     bool forceAndroid = false,
     bool forceIos = false,
   }) {
     ///
     /// Define a generic [IDialog]
-    IActionSheet dialogData;
+    IDialog dialogData;
 
     ///
     /// [dialogData] will be either a [IosDialog] or [AndroidDialog]
     ///
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        dialogData = AndroidActionSheet();
+        dialogData = AndroidDialog();
         break;
       case TargetPlatform.iOS:
-        dialogData = IosActionSheet();
+        dialogData = IosDialog();
         break;
       default:
-        dialogData = AndroidActionSheet();
+        dialogData = AndroidDialog();
+        break;
     }
-    
 
     ///
     /// Show Dialog [dialogData]
     ///
-    return showCupertinoModalPopup(
+    return showDialog(
       context: context,
       builder: (context) => dialogData.create(
-        context,
         title ?? Text('Untitled'),
         content ?? Text('Content missing.'),
         actions ?? [],
-        cancel,
       ),
     );
   }

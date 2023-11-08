@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-
-import '../UIUtils.dart';
-import '../flutter_ui_toolkit.dart';
+import 'package:universal_ui/UIUtils.dart';
+import 'package:universal_ui/models/UIButtonDefaults.dart';
+import 'package:universal_ui/widgets/UIHeading/UIHeading.dart';
 
 ///
 /// Button Content
 ///
 // ignore: non_constant_identifier_names
-Widget UIButtonContent(UIButtonDefaults? as, String? label, Color? labelColor, Widget? icon) {
+Widget UIButtonContent(
+    UIButtonDefaults? as, String? label, Color? labelColor, Widget? icon) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [

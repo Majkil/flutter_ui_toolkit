@@ -1,10 +1,11 @@
-import 'package:universal_io/io.dart';
-
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import './android_dialog.dart';
-import '../models/UIAction.dart';
-import './idialog.dart';
-import './ios_dialog.dart';
+import 'package:universal_ui/models/UIAction.dart';
+import 'package:universal_ui/widgets/UIDialog/android_dialog.dart';
+import 'package:universal_ui/widgets/UIDialog/idialog.dart';
+import 'package:universal_ui/widgets/UIDialog/ios_dialog.dart';
+ 
+
 
 ///
 /// Renders a dialog based on the [Platform] OS
@@ -25,12 +26,16 @@ class UIDialog {
     ///
     /// [dialogData] will be either a [IosDialog] or [AndroidDialog]
     ///
-    if ((Platform.isIOS || Platform.isMacOS || forceIos) && !forceAndroid) {
-      dialogData = IosDialog();
-    } else if ((Platform.isAndroid || forceAndroid) && !forceIos) {
-      dialogData = AndroidDialog();
-    } else {
-      dialogData = AndroidDialog();
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.android:
+        dialogData = AndroidDialog();
+        break;
+      case TargetPlatform.iOS:
+        dialogData = IosDialog();
+        break;
+      default:
+        dialogData = AndroidDialog();
+        break;
     }
 
     ///

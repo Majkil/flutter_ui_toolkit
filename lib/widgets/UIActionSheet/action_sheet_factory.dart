@@ -1,13 +1,11 @@
 import 'package:flutter/foundation.dart';
-import 'package:universal_ui/models/UIAction.dart';
-import 'package:universal_ui/widgets/UIActionSheet/android_action_sheet.dart';
-import 'package:universal_ui/widgets/UIActionSheet/iaction_sheet.dart';
 
-  
 
 import 'package:flutter/cupertino.dart';
-import 'package:universal_ui/widgets/UIActionSheet/ios_action_sheet.dart';
-
+import 'package:universal_ui/models/UIAction.dart';
+import 'android_action_sheet.dart';
+import 'iaction_sheet.dart';
+import 'ios_action_sheet.dart';
 
 ///
 /// Renders a dialog based on the [Platform] OS

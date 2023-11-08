@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_toolkit/flutter_ui_toolkit.dart';
+import 'package:flutter_ui_toolkit/models/UIButtonDefaults.dart';
+import 'package:flutter_ui_toolkit/models/UIContainerDefaults.dart';
+import 'package:flutter_ui_toolkit/models/UIHeadingDefaults.dart';
+import 'package:flutter_ui_toolkit/models/UITextFieldDefaults.dart';
+
 
 ///
 /// Solid Button Styles
@@ -26,10 +30,10 @@ final outlinedButtonStyles = UIButtonDefaults(
 ///
 /// Set Primary Input Styles
 ///
-final primaryInput = UITextFieldDefaults(
+final primaryInput =  UITextFieldDefaults(
   borderColor: Colors.black45,
   borderRadius: 8,
-  borderType: UIBorderType.outlineBorder,
+  //borderType: UIBorderType.outlineBorder,
   borderWidth: 2.0,
   hintColor: Colors.black54,
   bgColor: Colors.white,

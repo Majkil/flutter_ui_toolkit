@@ -1,12 +1,12 @@
-library flutter_ui_toolkit;
+library universal_ui_toolkit;
 
-export 'UIButton/UIButton.dart';
-export 'UITextField/UITextField.dart';
-export 'UIHeading/UIHeading.dart';
-export 'UIDialog/dialog_factory.dart';
-export 'UIContainer/UIContainer.dart';
-export 'UIActionSheet/action_sheet_factory.dart';
-export 'UIBottomSheet/UIBottomSheet.dart';
+export 'widgets/UIButton/UIButton.dart';
+export 'widgets/UITextField/UITextField.dart';
+export 'widgets/UIHeading/UIHeading.dart';
+export 'widgets/UIDialog/dialog_factory.dart';
+export 'widgets/UIContainer/UIContainer.dart';
+export 'widgets/UIActionSheet/action_sheet_factory.dart';
+export 'widgets/UIBottomSheet/UIBottomSheet.dart';
 
 export 'models/UIButtonDefaults.dart';
 export 'models/UITextFieldDefaults.dart';

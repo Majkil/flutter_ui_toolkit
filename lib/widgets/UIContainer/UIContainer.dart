@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_toolkit/models/UIContainerDefaults.dart';
+import 'package:universal_ui/UIUtils.dart';
+import 'package:universal_ui/models/UIContainerDefaults.dart';
 
-import '../UIUtils.dart';
+  
 
 class UIContainer extends StatelessWidget {
   UIContainer({

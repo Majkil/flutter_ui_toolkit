@@ -1,6 +1,7 @@
 import 'dart:ui';
 
-import '../flutter_ui_toolkit.dart';
+import 'package:universal_ui/UITextField/UITextField.dart';
+
 import 'UIDefaults.dart';
 
 class UITextFieldDefaults extends UIDefaults {

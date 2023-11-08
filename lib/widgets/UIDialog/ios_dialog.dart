@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_ui_toolkit/flutter_ui_toolkit.dart';
-import '../models/UIAction.dart';
+import 'package:universal_ui/flutter_ui_toolkit.dart';
+  
 import './idialog.dart';
 
 ///

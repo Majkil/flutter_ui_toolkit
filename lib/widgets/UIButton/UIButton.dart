@@ -3,11 +3,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:universal_ui/UIUtils.dart';
 import 'package:universal_ui/models/UIButtonDefaults.dart';
-import 'package:universal_ui/widgets/UIButton/button_content.dart';
 
   
   
- 
+import 'button_content.dart';
 
 class UIButton {
   ///

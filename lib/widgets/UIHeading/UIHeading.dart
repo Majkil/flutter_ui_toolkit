@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_toolkit/UIUtils.dart';
-import 'package:flutter_ui_toolkit/models/UIHeadingDefaults.dart';
+import 'package:universal_ui/UIUtils.dart';
+import 'package:universal_ui/models/UIHeadingDefaults.dart';
 
 class UIHeading extends StatelessWidget {
   const UIHeading({

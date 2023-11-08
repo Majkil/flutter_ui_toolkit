@@ -55,7 +55,7 @@ class UIUtils {
 
   /// Get Whatever
   /// returns a [dynamic] based on [UIDefaults] or overridden properties
-  static dynamic getStyle(UIDefaults? defaults, dynamic? defaultProp, dynamic? overrideWith, dynamic defaultTo) {
+  static dynamic getStyle(UIDefaults? defaults, dynamic defaultProp, dynamic overrideWith, dynamic defaultTo) {
     /// if defaults is defined
     if (defaults != null) {
       ///
