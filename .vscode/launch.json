@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "flutter_ui_toolkit",
+            "name": "universal_ui",
             "request": "launch",
             "type": "dart"
         },

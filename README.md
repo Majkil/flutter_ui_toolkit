@@ -461,7 +461,7 @@ UIButton.solid(
 
 If you find any bug or want to request a feature, feel free to open an issue on Github.
 
-https://github.com/nobrefelipe/flutter_ui_toolkit/issues
+https://github.com/nobrefelipe/universal_ui/issues
 
 
 I will be improving this package bit by bit and will always try to keep it simple and objective.

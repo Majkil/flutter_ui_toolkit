@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:universal_ui/flutter_ui_toolkit.dart';
+import 'package:universal_ui/models/UIAction.dart';
+
   
 
 abstract class IDialog {

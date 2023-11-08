@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:universal_ui/UITextField/UITextField.dart';
+import 'package:universal_ui/widgets/UITextField/UITextField.dart';
 
 import 'UIDefaults.dart';
 

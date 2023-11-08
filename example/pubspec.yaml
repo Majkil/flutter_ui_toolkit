@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_ui_toolkit:
+  universal_ui:
     path : ../
   
   cupertino_icons: ^1.0.0

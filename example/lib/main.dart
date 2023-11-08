@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_toolkit/UIActionSheet/action_sheet_factory.dart';
-import 'package:flutter_ui_toolkit/UIButton/UIButton.dart';
-import 'package:flutter_ui_toolkit/UIDialog/dialog_factory.dart';
-import 'package:flutter_ui_toolkit/UITextField/UITextField.dart';
-import 'package:flutter_ui_toolkit/models/UIAction.dart';
-import 'package:flutter_ui_toolkit/widgets/UIBottomSheet/UIBottomSheet.dart';
-import 'package:flutter_ui_toolkit/widgets/UIContainer/UIContainer.dart';
-import 'package:flutter_ui_toolkit/widgets/UIHeading/UIHeading.dart';
-
+import 'package:universal_ui/UIActionSheet/action_sheet_factory.dart';
+import 'package:universal_ui/widgets/UIButton/UIButton.dart';
+import 'package:universal_ui/widgets/UIDialog/dialog_factory.dart';
+import 'package:universal_ui/widgets/UITextField/UITextField.dart';
+import 'package:universal_ui/models/UIAction.dart';
+import 'package:universal_ui/widgets/UIBottomSheet/UIBottomSheet.dart';
+import 'package:universal_ui/widgets/UIContainer/UIContainer.dart';
+import 'package:universal_ui/widgets/UIHeading/UIHeading.dart';
 
 ///
 /// Import Default Styles
@@ -275,7 +274,8 @@ class MyHomePage extends StatelessWidget {
               ///
               UIContainer(
                 as: errorContainer,
-                child: Text('This is a box with a nice shadow\nand a cool rounded border.'),
+                child: Text(
+                    'This is a box with a nice shadow\nand a cool rounded border.'),
               ),
               SizedBox(height: 40),
             ],
